@@ -78,7 +78,7 @@ export default function Header() {
                                     {/* <li> */}
                                     <CiHeart className='inline-block' size={35} />
                                 </li>
-                                {currentUser ?
+                                {currentUser && currentUser?.avatar ?
                                     <li className=''>
                                         <div>
                                             <img className='w-[80px] h-[80px] rounded-full' src={currentUser?.avatar} alt='avatar' />
