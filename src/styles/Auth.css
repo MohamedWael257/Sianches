@@ -1,0 +1,7 @@
+.register {
+    background-image: url(../images/auth/01.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-black: #12100b;
+  --secondry-black: #3e453e;
+  --third-black: #656861;
+  --fourth-black: #8d999d;
+  --primary-red: #641716;
+  --primary-brown: #eed090;
+  --secondry-brown: #f4fdb7;
+}
+
+
+input {
+  outline: none;
+}
+
+button {
+  border: none;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+  background: #c3c3c3;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #12100b;
+}
+
+::selection {
+  background: #12100b;
+  color: #c3c3c3;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+ul,
+li {
+  list-style: none;
+}
+
+.Toastify {
+  position: absolute;
+  z-index: 3333333333;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
+.line {
+  background-color: var(--primary-black);
+  width: 70px;
+  height: 2px;
+}
+
+header nav ul li {
+  position: relative;
+}
+
+header nav ul li>img {
+  position: absolute;
+  bottom: -5px;
+  left: 40%;
+  width: 15px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s visibility, 0.3s opacity;
+}
+
+header nav ul li:hover>img,
+header nav ul li.active>img {
+  opacity: 1;
+  visibility: visible;
+}
+
+header .dropdown .dropdown-menu {
+  background-color: #2d2d2d;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  position: absolute;
+  top: 53px;
+  right: -45px;
+  display: grid;
+  width: 200px;
+  height: 150px;
+  padding: 8px 0;
+  z-index: 3333;
+  opacity: 0;
+  visibility: hidden;
+  transition: .4s opacity, .4s visibility, .4s height;
+}
+
+header .dropdown .dropdown-menu.active {
+  visibility: visible;
+  opacity: 1;
+  height: 150px;
+}
+
+@media(max-width:992px) {
+  header nav ul li .dropdown .dropdown-menu {
+    display: none;
+    height: 0px;
+    right: 0;
+    background: transparent;
+    position: relative;
+    top: 21px;
+    width: 99%;
+    margin-bottom: 15px;
+
+  }
+
+  header .dropdown .dropdown-menu a {
+    text-align: center;
+  }
+
+  header nav ul li .dropdown .dropdown-menu.active {
+    display: grid;
+  }
+
+
+}

@@ -1,0 +1,16 @@
+.hero-image {
+    background:
+        linear-gradient(#1A1919d0 25%, #19191900),
+        url(../images/home/01.jpeg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100vh; */
+    /* padding-top: 12rem; */
+    /* position: relative; */
+    /* z-index: 3333; */
+    /* display: grid;
+    justify-content: center;
+    align-items: center; */
+    /* color: white; */
+}
