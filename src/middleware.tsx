@@ -24,9 +24,9 @@ export default async function middleware(request: NextRequest) {
     const userData = data;
 
     // 5. Redirect to /login if the user is not authenticated
-    if (!userData && !authRoutes.includes(path)) {
-        return NextResponse.redirect(new URL('/login', request.nextUrl))
-    }
+    // if (!userData && !authRoutes.includes(path)) {
+    //     return NextResponse.redirect(new URL('/login', request.nextUrl))
+    // }
 
     // 6. Redirect to / if the user is  authenticated
     if (authRoutes.includes(path) && userData) {
