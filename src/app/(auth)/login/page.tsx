@@ -78,13 +78,13 @@ export default function login() {
                                 <label className='flex capitalize items-center mb-3 text-lg font-medium'><IoKeyOutline className='mr-2' size={25} /> password</label>
                                 <input className='w-full p-5 rounded-md bg-[#2d2d2d23] text-black placeholder:text-[var(--third-black)] placeholder:capitalize' type='password' id='password' name='password' placeholder='password' value={password} onChange={(e) => setPassword(e.target.value)} required />
                             </div>
-                            <Link href={'forgetpassword'} className='inline-block md:text-lg font-medium capitalize mb-6'>forget password</Link>
+                            <Link href={'forgetpassword'} className='inline-block text-lg font-medium capitalize mb-6'>forget password</Link>
                             <button onClick={handleLogin} type="submit" className="w-full bg-[#2d2d2d] text-white p-5 mb-3">
                                 Login
                             </button>
                         </form>
-                        <p className='account flex justify-center capitalize'>don't have an account ?
-                            <Link className='flex items-center mb-3 mdtext-lg font-medium  ml-2' href="/register"> Create Account</Link>
+                        <p className='account flex md:flex-col flex-row  justify-center  capitalize'>don't have an account ?
+                            <Link className='flex items-center mb-3 text-lg font-medium  ml-2' href="/register"> Create Account</Link>
                         </p>
                     </div>
                 </section>
