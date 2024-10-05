@@ -83,7 +83,7 @@ export default function login() {
                                 Login
                             </button>
                         </form>
-                        <p className='account flex md:flex-col flex-row  justify-center  capitalize'>don't have an account ?
+                        <p className='account flex flex-col md:flex-row  justify-center  capitalize'>don't have an account ?
                             <Link className='flex items-center mb-3 text-lg font-medium  ml-2' href="/register"> Create Account</Link>
                         </p>
                     </div>
